@@ -2,4 +2,5 @@
 Library    SeleniumLibrary
 
 *** Test Cases ***
- Log To Console    Test
+ Log To Console    TestTC002
+     Log To Console    Test
