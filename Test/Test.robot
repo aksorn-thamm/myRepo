@@ -6,3 +6,4 @@ Library    SeleniumLibrary
 TC001 Test
     Log To Console    Test
     Log To Console    Test
+    Log Location
