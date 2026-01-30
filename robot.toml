@@ -1,0 +1,24 @@
+[project]
+name = "robotframework-robocop"
+description = "Static code analysis tool (linter) and code formatter for Robot Framework"
+keywords = ["robotframework", "automation", "testautomation", "testing", "linter", "qa", "formatting", "formatter"]
+
+[tool.robocop.lint]
+
+ignore = [
+    "SPC01", # trailing-whitespace - มี whitespace ท้ายบรรทัด
+    "SPC02", # missing-trailing-blank-line - ไม่มี blank line ท้ายไฟล์
+    "SPC03", # invalid-number-of-empty-lines - จำนวน empty lines ผิด
+    "DOC01", # missing-doc-keyword - ไม่มี documentation ใน keyword
+    "VAR02", # unused-variable - Variable ไม่ได้ใช้งาน
+    "ARG01", # unused-argument - Argument ไม่ได้ใช้งาน
+    "DUP03",  # duplicated-variable - Variable ซ้ำกัน
+    "NAME18"  # case convention - ชื่อ Keyword ต้องใช้ Case Convention ให้สม่ำเสมอ
+]
+
+extend-select = [
+
+    "ERR01"    # parsing-error - Syntax error
+]
+
+

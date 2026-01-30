@@ -1,0 +1,7 @@
+timeout:
+  page: 60s
+  element: 5s
+  globlal: 30s
+
+url:
+  lotuss: http://www.lotuss.com 

@@ -1,0 +1,11 @@
+home_language:
+  TH:
+    category:
+      title: หมวดหมู่
+      list:
+        - catname
+  EN:
+    category:
+      title:  CATEGORIES
+      list:
+        - catname
