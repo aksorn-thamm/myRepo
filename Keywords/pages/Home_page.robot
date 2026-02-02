@@ -1,6 +1,6 @@
 *** Keywords ***
 
-Open Lotuss Website
+Open lotuss website
     [Documentation]    เปิดเว็บไซต์ Lotuss ตาม URL ที่กำหนด
     common.Open Website    ${url.lotuss}
     
@@ -14,7 +14,7 @@ Accept cookie if display
         BuiltIn.Log To Console    No cookie banner displayed
     END
 
-Search Xiaomi
+Input search to text  
     [Documentation]    ค้นหาสินค้าด้วยการกรอกข้อความและกด Enter ในช่องค้นหา
-    [Arguments]    ${input_locator}    ${text}
-    Input Text And Press Enter    ${input_locator}    ${text}
+    [Arguments]     ${text}
+    Input Text And Press Enter     ${txt_SERCH_INPUT}    ${text}

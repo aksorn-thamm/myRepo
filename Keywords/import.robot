@@ -7,17 +7,19 @@ Library     DebugLibrary
 ##Keyword
 Resource     ${CURDIR}/common.robot
 Resource     ${CURDIR}/pages/home_page.robot
-Resource     ${CURDIR}/pages/Product_list_page.robot
-Resource     ${CURDIR}/pages/Detail_cart_page.robot
-Resource     ${CURDIR}/../resources/Locators/page/Detail_cart_page.robot
+Resource     ${CURDIR}/pages/product_list_page.robot
+Resource     ${CURDIR}/pages/detail_cart_page.robot
+Resource     ${CURDIR}/features/open_close_Features.robot
+Resource     ${CURDIR}/features/search_product.robot
 
 ##Locator
-Resource     ${CURDIR}/../resources/Locators/page/Home_locators.robot
-Resource     ${CURDIR}/../resources/Locators/page/List_cart_locator.robot
+Resource     ${CURDIR}/../resources/locators/page/home_locators.robot
+Resource     ${CURDIR}/../resources/locators/page/list_cart_locator.robot
+Resource     ${CURDIR}/../resources/locators/page/detail_cart_page.robot
 
 ##Test Data
-Variables    ${CURDIR}/../resources/Settings/Uat/Settings.yaml
-Variables    ${CURDIR}/../resources/Testdata/Uat/Home_page.yaml
-Variables    ${CURDIR}/../resources/Testdata/Uat/widget_data.yaml
-Variables    ${CURDIR}/../resources/Testdata/Uat/Detail_page.yaml
-Variables    ${CURDIR}/../resources/Testdata/Uat/List_page.yaml
+Variables    ${CURDIR}/../resources/Settings/uat/settings.yaml
+Variables    ${CURDIR}/../resources/testdata/uat/home_page.yaml
+Variables    ${CURDIR}/../resources/testdata/uat/widget_data.yaml
+Variables    ${CURDIR}/../resources/testdata/uat/detail_page.yaml
+Variables    ${CURDIR}/../resources/testdata/uat/list_page.yaml

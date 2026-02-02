@@ -5,7 +5,7 @@ Open Website
     [Arguments]    ${locator}
     SeleniumLibrary.Open Browser      ${locator}
 
-Close Website
+Close website
     [Documentation]    ปิดเบราว์เซอร์ที่เปิดใช้งานอยู่
     SeleniumLibrary.Close Browser
 
@@ -34,12 +34,11 @@ Verify And Click Cookie Button
         BuiltIn.Log To Console    Cookie button not found
     END
 
-Verify Menu List
+Verify menu list
     [Documentation]    ตรวจสอบว่าเมนูทั้งหมดที่คาดหวังแสดงอยู่บนหน้าเว็บ
     [Arguments]    @{expected_menus}
     FOR    ${menu}    IN    @{expected_menus}
         SeleniumLibrary.Wait Until page Contains    ${menu}    timeout=5s
-        BuiltIn.Log To Console   ✔ Found menu: ${menu}
     END
 
 Input Text When Ready
